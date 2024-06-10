@@ -9,6 +9,7 @@ ADDINCL(
 YQL_LAST_ABI_VERSION()
 
 SRCS(
+    yql_arrow_push_down.cpp
     yql_s3_actors_util.cpp
     yql_s3_applicator_actor.cpp
     yql_s3_raw_read_actor.cpp
@@ -35,6 +36,7 @@ PEERDIR(
     ydb/library/yql/providers/common/http_gateway
     ydb/library/yql/providers/common/schema/mkql
     ydb/library/yql/providers/common/token_accessor/client
+    ydb/library/yql/providers/generic/pushdown
     ydb/library/yql/providers/s3/common
     ydb/library/yql/providers/s3/compressors
     ydb/library/yql/providers/s3/credentials
